@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		C56778A827A40F6C00443485 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56778A727A40F6C00443485 /* AppDelegate.swift */; };
 		C56778AA27A40F6C00443485 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56778A927A40F6C00443485 /* SceneDelegate.swift */; };
-		C56778AC27A40F6C00443485 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56778AB27A40F6C00443485 /* ViewController.swift */; };
-		C56778AF27A40F6C00443485 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C56778AD27A40F6C00443485 /* Main.storyboard */; };
 		C56778B127A40F6D00443485 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C56778B027A40F6D00443485 /* Assets.xcassets */; };
 		C56778B427A40F6D00443485 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C56778B227A40F6D00443485 /* LaunchScreen.storyboard */; };
+		C56778C727A4115000443485 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56778C527A4115000443485 /* HomeVC.swift */; };
+		C56778C827A4115000443485 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C56778C627A4115000443485 /* HomeVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C56778A427A40F6C00443485 /* Vaping-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vaping-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C56778A727A40F6C00443485 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C56778A927A40F6C00443485 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C56778AB27A40F6C00443485 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C56778AE27A40F6C00443485 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C56778B027A40F6D00443485 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C56778B327A40F6D00443485 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C56778B527A40F6D00443485 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C56778C527A4115000443485 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		C56778C627A4115000443485 /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,55 @@
 		C56778A627A40F6C00443485 /* Vaping-App */ = {
 			isa = PBXGroup;
 			children = (
+				C56778C027A4107F00443485 /* Helpers */,
+				C56778BF27A4107200443485 /* Screens */,
+				C56778BE27A4105A00443485 /* Model */,
+				C56778BD27A4103D00443485 /* Support Files */,
+			);
+			path = "Vaping-App";
+			sourceTree = "<group>";
+		};
+		C56778BD27A4103D00443485 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
 				C56778A727A40F6C00443485 /* AppDelegate.swift */,
 				C56778A927A40F6C00443485 /* SceneDelegate.swift */,
-				C56778AB27A40F6C00443485 /* ViewController.swift */,
-				C56778AD27A40F6C00443485 /* Main.storyboard */,
 				C56778B027A40F6D00443485 /* Assets.xcassets */,
 				C56778B227A40F6D00443485 /* LaunchScreen.storyboard */,
 				C56778B527A40F6D00443485 /* Info.plist */,
 			);
-			path = "Vaping-App";
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		C56778BE27A4105A00443485 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C56778BF27A4107200443485 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				C56778C427A4113400443485 /* Home Screen */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		C56778C027A4107F00443485 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C56778C427A4113400443485 /* Home Screen */ = {
+			isa = PBXGroup;
+			children = (
+				C56778C527A4115000443485 /* HomeVC.swift */,
+				C56778C627A4115000443485 /* HomeVC.xib */,
+			);
+			path = "Home Screen";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +165,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C56778B427A40F6D00443485 /* LaunchScreen.storyboard in Resources */,
+				C56778C827A4115000443485 /* HomeVC.xib in Resources */,
 				C56778B127A40F6D00443485 /* Assets.xcassets in Resources */,
-				C56778AF27A40F6C00443485 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +177,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C56778AC27A40F6C00443485 /* ViewController.swift in Sources */,
+				C56778C727A4115000443485 /* HomeVC.swift in Sources */,
 				C56778A827A40F6C00443485 /* AppDelegate.swift in Sources */,
 				C56778AA27A40F6C00443485 /* SceneDelegate.swift in Sources */,
 			);
@@ -146,14 +186,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C56778AD27A40F6C00443485 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C56778AE27A40F6C00443485 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C56778B227A40F6D00443485 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -216,7 +248,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +303,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -288,7 +320,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WSH653UKSN;
-				INFOPLIST_FILE = "Vaping-App/Info.plist";
+				INFOPLIST_FILE = "Vaping-App/Support Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +340,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WSH653UKSN;
-				INFOPLIST_FILE = "Vaping-App/Info.plist";
+				INFOPLIST_FILE = "Vaping-App/Support Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
